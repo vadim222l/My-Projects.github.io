@@ -1,0 +1,42 @@
+// Variables
+
+@gradientOpacity: 0.85;
+@gradientTop: linear-gradient(180deg,rgba(0, 0, 0, 0.40) 0,rgba(255, 255, 255, 0) 100%);
+@gradientRight: linear-gradient(270deg,rgba(0, 0, 0, 0.40) 0,rgba(255, 255, 255, 0) 100%);
+@gradientLeft: linear-gradient(90deg,rgba(0, 0, 0, 0.40) 0,rgba(255, 255, 255, 0) 100%);
+
+@decorGreen: #00A651;
+@sectionTitleColor:#333;
+@textColor:#1A1A1A;
+
+@mainFont: 'Museo';
+@textFont: 'Roboto';
+@decorFont: 'KaushanScript';
+
+
+.gradient_overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.transition(@style:all; @time:0.3s; @anim: ease-in-out){
+    -moz-transition: @style @time @anim;
+    -webkit-transition: @style @time @anim;
+    transition: @style @time @anim;
+}
+
+.font(@family:'OpenSans'; @size:16px; @weight: normal; @lh:1.2; @color: #000){
+    font-family: @family;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lh;
+    color: @color;
+}
+
+.shadow(@x:1px; @y:1px; @size:1px; @blur:4px; @color:rgba(0,0,0,0.3)){
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
